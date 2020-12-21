@@ -1,5 +1,5 @@
 .banner{
-    background: url('/assets/img/hero.jpg');
+    background: url('http://christmas.themeebit.com/images/hero-bg.jpg');
     height: 60vh;
     background-size: contain;
     position: relative;
@@ -55,9 +55,6 @@
         img{
             display: none;
         }
-    }
-    .donate{
-        background: none;
     }
     .banner__content h1{
         font-size: 4rem;
