@@ -1,0 +1,116 @@
+.contact{
+    padding: 70px 0;
+    position: relative;
+    &__title{
+        h3{
+            font-size: 2.5rem;
+            color: $red;
+            text-transform: unset;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        p{
+            color: #3a3a3a;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+    }
+    form{
+        .form__input{
+            position: relative;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            input{
+                padding: 12px 44px;
+                border: 1px solid #f2f2f2;
+                width: 68%;
+            }
+            .form__img{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .form__msg{
+            position: relative;
+            textarea{
+                padding: 20px 25px 0 44px;
+                height: 135px;
+                display: block;
+                width: 81%;
+                margin-bottom: 20px;
+                resize: none;
+            }
+            .form__image{
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateX(-50%);
+            }
+            .btn__submit{
+                float: right;
+                color: $white;
+                text-transform: $textUpperCase;
+                padding: 15px 57px;
+                background: $red;
+            }
+        }
+    }
+    .img__right{
+        position: absolute;
+        right: 13%;
+        top: 0;
+    }
+}
+
+@include breakpoint(991){
+    .img__right{
+        img{
+            display: none;
+        }
+    }
+    footer .social__icons{
+        border-right: none;
+    }
+    footer .logo{
+        border-right: none;
+    }
+    .contact form .form__msg{
+        margin-left: 25px;
+    }
+}
+
+@include breakpoint(767) {
+    .img__right{
+        img{
+            display: none;
+        }
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .contact form .form__msg textarea{
+        margin-top: 25px;
+        width: 74%;
+    }
+    footer .social__icons{
+        border-right: none;
+    }
+    footer .logo{
+        border-right: none;
+    }
+    .contact__title,form{
+        padding: 0 40px;
+    }
+    .contact form .form__msg{
+        margin-left: 0;
+    }
+    .contact{
+        padding: 20px 0;
+    }
+}

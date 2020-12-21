@@ -1,0 +1,93 @@
+.counter__area{
+    .figures{
+        background: #272727;
+        padding: 103px 0 13px 0;
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            li{
+                flex-basis: 21.5%;
+                animation: dance 2s infinite;
+                transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+                @keyframes dance {
+                    0% {
+                        transform: rotate(10deg);
+                    }
+                    16.66%, 49.98% {
+                        transform: rotate(-10deg);
+                    }
+                    32.32%{
+                        transform: rotate(-5deg);
+                    }
+                    66.64%, 100%{
+                        transform: rotate(10deg);
+                    }
+                    83.8%{
+                        transform: rotate(5deg);
+                    }
+                }
+            }
+        }
+    }
+    .right__side{
+        background: $red;
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .countdown{
+            display: flex;
+            text-align: center;
+            li{
+                color: $white;
+                font-size: 5rem;
+                font-weight: bold;
+                padding: 0 45px;
+                position: relative;
+                span{
+                    font-weight: 300;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    display: block;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 500px;
+                    top: -220px;
+                    right: 0;
+                    transform: rotate(25deg);
+                    background: #c02323;
+                }
+                &:last-child::after{
+                    width: unset;
+                }
+            }
+        }
+        .sledge{
+            position: absolute;
+            right: 275px;
+            bottom: 15px;
+        }
+    }
+}
+
+@include breakpoint(991){
+    .counter__area{
+        .figures{
+            ul{
+                li{
+                    flex-basis: 50%;
+                }
+            }
+        }
+    }
+    .counter__area .right__side{
+        padding: 50px 0;
+    }
+    .counter__area .right__side .countdown li{
+        padding: 0 40px;
+    }
+}

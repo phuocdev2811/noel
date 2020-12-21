@@ -1,0 +1,32 @@
+.donate{
+    padding: 76px 0;
+    background: url('/assets/img/penguin_scene.png') no-repeat;
+    background-position: calc(50% + 430px);
+    h3{
+        font-size: 2.5rem;
+        color: $red;
+        text-transform: unset;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    p{
+        color: #3a3a3a;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    a{
+        padding: 24px;
+        color: $white;
+        background: $red;
+        text-transform: $textUpperCase;
+        font-size: 16px;
+        margin-top: 40px;
+        display: inline-block;
+        transition: .3s;
+        &:hover{
+            color: #ddd;
+        }
+    }
+}

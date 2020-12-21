@@ -1,0 +1,85 @@
+nav{
+    padding: 31px 0;
+    .nav__logo{
+        display: flex;
+        justify-content: center;
+        a{
+            display: inline-block;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .nav__btn{
+        position: fixed;
+        right: 17.5%;
+        top: 41px;
+        z-index: 99999;
+        span{
+            cursor: pointer;
+            color: #333;
+            font-size: 25px;
+            &.active{
+                color: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: $red;
+                text-align: center;
+                line-height: 50px;
+                display: inline-block;
+                transition: .4s;
+            }
+        }
+    }
+    .offset__menu{
+        position: fixed;
+        top: 0;
+        width: 35%;
+        right: 0;
+        height: 100%;
+        background: rgba(31,31,31,0.98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform .8s;
+        z-index: 99999;
+        .close__btn{
+            position: absolute;
+            top: 30px;
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        &.open{
+            transform: translateX(0);
+        }
+        .list__menu{
+            li{
+                a{
+                    color: #b1b1b1;
+                    font-size: 2.8rem;
+                    font-weight: 700;
+                    line-height: 53px;
+                    transition: .3s;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(767) {
+    nav .offset__menu{
+        width: 40%;
+    }
+}
+
+@include breakpoint(500){
+    nav .offset__menu{
+        width: 60%;
+    }
+}

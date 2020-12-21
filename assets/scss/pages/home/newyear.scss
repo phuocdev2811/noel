@@ -1,0 +1,29 @@
+.newyear{
+    padding: 106px 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__content{
+        h3{
+            text-transform: unset;
+            font-size: 4.6rem;
+            color: $red;
+            letter-spacing: 5px;
+        }
+        span{
+            background: $red;
+            color: #fff;
+            padding: 6px 140px;
+            font-size: 4.6rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+}
+
+@include breakpoint(767) {
+    .newyear{
+        padding: 50px 0;
+    }
+}

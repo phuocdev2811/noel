@@ -1,0 +1,96 @@
+.banner{
+    background: url('/assets/img/hero.jpg');
+    height: 60vh;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: right;
+    .santa__img{
+        position: absolute;
+        left: 15px;
+        top: -18%;
+    }
+    .reindeer__img{
+        position: absolute;
+        right: 51px;
+        top: 120px;
+    }
+    &__content{
+        h3{
+            color: #3a3a3a;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-transform: unset;
+            font-weight: 400;
+        }
+        h1{
+            font-size: 6rem;
+            margin-bottom: 10px;
+            text-transform: $textUpperCase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+    .list__gifts{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+    }
+}
+
+@include breakpoint(991){
+    .santa__img{
+        img{
+            display: none;
+        }
+    }
+    .reindeer__img{
+        img{
+            display: none;
+        }
+    }
+    .donate{
+        background: none;
+    }
+    .banner__content h1{
+        font-size: 4rem;
+    }
+}
+
+@include breakpoint(1024){
+    .santa__img{
+        img{
+            display: none;
+        }
+    }
+    .reindeer__img{
+        img{
+            display: none;
+        }
+    }
+}
+@include breakpoint(1500){
+    .santa__img{
+        img{
+            display: none;
+        }
+    }
+    .reindeer__img{
+        img{
+            display: none;
+        }
+    }
+}
+
+@include breakpoint(767){
+    .banner__content h1{
+        font-size: 3rem;
+    }
+}

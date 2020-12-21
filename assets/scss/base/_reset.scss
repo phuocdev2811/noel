@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li,ol {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,textarea {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
